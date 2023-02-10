@@ -2,11 +2,13 @@ const inquirer = require ('inquirer');
 
 const fs = require ('fs'); 
 
+const Circle = require ('./lib/circle'); 
+
 
 // create terminal questions to generate logo 
 
-inquirer 
-    .prompt([
+const questions = [
+   
         {
             type: 'input', 
             message: '*MAXIMUM 3 LETTERS* Enter 3 letters of text for your logo.',
@@ -31,7 +33,7 @@ inquirer
             name: 'shapecolor', 
 
         },
-    ]);
+    ];
 
     function writeToFile(fileName, data) {
         fs.writeFile(fileName, data, (err) => 
@@ -41,8 +43,10 @@ inquirer
 function init() {
     inquirer.prompt(questions)
     .then(response =>{
-        let readText = utils(response)
-        writeToFile('logo.svg', readText)
+        console.log(response);
+        const circle = new Circle(response.logo, response.textcolor, response.shapecolor);
+        // let readText = utils(response)
+        writeToFile('logo.svg', circle.render())
     }) 
 }
 
