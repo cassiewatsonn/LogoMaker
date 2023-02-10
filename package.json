@@ -1,0 +1,27 @@
+{
+  "name": "logomaker",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/badge/license-MIT-blue)",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cassiewatsonn/LogoMaker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cassiewatsonn/LogoMaker/issues"
+  },
+  "homepage": "https://github.com/cassiewatsonn/LogoMaker#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^29.4.2"
+  }
+}
