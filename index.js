@@ -4,6 +4,12 @@ const fs = require ('fs');
 
 const Circle = require ('./lib/circle'); 
 
+// const Triangle = require ('./lib/triangle');
+
+// const Square = require ('./lib/square');
+
+// const Shape = require ('./lib/shape');
+
 
 // create terminal questions to generate logo 
 
@@ -25,7 +31,7 @@ const questions = [
             type: 'list', 
             message: 'Choose a shape for your logo.', 
             name: 'shape', 
-            choices: ['Circle', 'Triangle', 'Square']
+            choices: ['circle', 'triangle', 'square']
         },
         {
             type: 'input', 
@@ -40,6 +46,30 @@ const questions = [
         err ? console.log(err): console.log("Generated logo.svg"))
 }
 
+
+/// trying to create function to determine the selection of square, circle or triangle...... 
+/// TRYING.... 
+// function shapeChoice(shape){
+//     if (shape === circle)
+//     then (response => {
+//         console.log(response); 
+//         const circle = new Circle(response.logo, response.textcolor, response.shapecolor);
+//         writeToFile('logo.svg', circle.render())
+//     })
+//     else if (shape === triangle)
+//     then (response => {
+//         console.log(response); 
+//         const triangle = new Triangle(response.logo, response.textcolor, response.shapecolor);
+//         writeToFile('logo.svg', triangle.render())
+//     })
+//     else if (shape === square)
+//     then (response => {
+//         console.log(response); 
+//         const square = new Square(response.logo, response.textcolor, response.shapecolor);
+//         writeToFile('logo.svg', square.render())
+//     })
+// }
+
 function init() {
     inquirer.prompt(questions)
     .then(response =>{
@@ -51,3 +81,6 @@ function init() {
 }
 
 init();
+
+
+
