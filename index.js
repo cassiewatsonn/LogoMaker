@@ -4,9 +4,9 @@ const fs = require ('fs');
 
 const Circle = require ('./lib/circle'); 
 
-// const Triangle = require ('./lib/triangle');
+const Triangle = require ('./lib/triangle');
 
-// const Square = require ('./lib/square');
+const Square = require ('./lib/square');
 
 // const Shape = require ('./lib/shape');
 
