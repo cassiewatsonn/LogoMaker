@@ -8,6 +8,7 @@ const Triangle = require ('./lib/triangle');
 
 const Square = require ('./lib/square');
 
+
 // const Shape = require ('./lib/shape');
 
 
@@ -80,17 +81,17 @@ function shapeChoice(response) {
     switch (response.shape) {
         case 'circle':
             const circle = new Circle(response.logo, response.textcolor, response.shapecolor);
-            writeToFile('logo.svg', circle.render()) // the object's render() method is triggered, writing out the logo as a SVG file.
+            writeToFile('./logoSAMPLE/logo.svg', circle.render()) // the object's render() method is triggered, writing out the logo as a SVG file.
             break; 
 
         case 'triangle':
             const triangle = new Triangle(response.logo, response.textcolor, response.shapecolor);
-            writeToFile('logo.svg', triangle.render())
+            writeToFile('./logoSAMPLE/logo.svg', triangle.render())
             break;
 
         case 'square':
             const square = new Square(response.logo, response.textcolor, response.shapecolor);
-            writeToFile('logo.svg', square.render())
+            writeToFile('./logoSAMPLE/logo.svg', square.render())
             break;// tells computer to stop 
 
         // default:
