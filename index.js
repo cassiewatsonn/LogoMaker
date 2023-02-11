@@ -11,14 +11,14 @@ const questions = [
    
         {
             type: 'input', 
-            message: '*MAXIMUM 3 LETTERS* Enter 3 letters of text for your logo.',
+            message: '*MAXIMUM 3 LETTERS* Enter 3 letters of text for your logo.',// add failure check for max 3 characters
             name: 'logo', 
  
         }, 
         {
             type: 'input', 
             message: 'Enter a color keyword or a hexadecimal number for your TEXT color.', 
-            name: 'textcolor', 
+            name: 'textcolor', // failure check????
 
         }, 
         {
@@ -30,7 +30,7 @@ const questions = [
         {
             type: 'input', 
             message: 'Enter a color keyword or a hexadecimal number for your SHAPE COLOR.', 
-            name: 'shapecolor', 
+            name: 'shapecolor', /// failure check???? 
 
         },
     ];
