@@ -41,44 +41,51 @@ const questions = [
         },
     ];
 
+    // used to write given data to a file with logo.svg name
+    // fileName is name of file i want to write to 
+    // data is the data I want to write in the file 
     function writeToFile(fileName, data) {
+        // fs.writeFile method writes data to file 
         fs.writeFile(fileName, data, (err) => 
-        err ? console.log(err): console.log("Generated logo.svg"))
+        // return logged message 
+        err ? console.log(err) : console.log("Generated logo.svg"))
 }
+
 
 
 /// trying to create function to determine the selection of square, circle or triangle...... 
 /// TRYING.... 
-// function shapeChoice(shape){
-//     if (shape === circle)
-//     then (response => {
-//         console.log(response); 
-//         const circle = new Circle(response.logo, response.textcolor, response.shapecolor);
-//         writeToFile('logo.svg', circle.render())
-//     })
-//     else if (shape === triangle)
-//     then (response => {
-//         console.log(response); 
-//         const triangle = new Triangle(response.logo, response.textcolor, response.shapecolor);
-//         writeToFile('logo.svg', triangle.render())
-//     })
-//     else if (shape === square)
-//     then (response => {
-//         console.log(response); 
-//         const square = new Square(response.logo, response.textcolor, response.shapecolor);
-//         writeToFile('logo.svg', square.render())
-//     })
-// }
-
-function init() {
-    inquirer.prompt(questions)
-    .then(response =>{
-        console.log(response);
+function shapeChoice(shape){
+    if (shape === circle){
+        console.log(response); 
         const circle = new Circle(response.logo, response.textcolor, response.shapecolor);
-        // let readText = utils(response)
+        writeToFile('logo.svg', circle.render())
+    }
+    else if (shape === triangle){
+        console.log(response); 
+        const triangle = new Triangle(response.logo, response.textcolor, response.shapecolor);
+        writeToFile('logo.svg', triangle.render())
+    }
+    else if (shape === square){
+        console.log(response); 
+        const square = new Square(response.logo, response.textcolor, response.shapecolor);
+        writeToFile('logo.svg', square.render())
+    }
+}
+
+// used to create logo based on user input 
+function init() {
+    // inquirer.prompt method to ask user set of questions ^ 
+    inquirer.prompt(questions)
+    .then(response =>{ // user responses stored in response variable
+        console.log(response);
+        // created circle object with logo,textcolor,shapecolor from response variable
+        const circle = new Circle(response.logo, response.textcolor, response.shapecolor);
+        // writeToFile to create svg file. circle.render to make logo
         writeToFile('logo.svg', circle.render())
     }) 
 }
+
 
 init();
 
