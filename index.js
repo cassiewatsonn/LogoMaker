@@ -8,10 +8,6 @@ const Triangle = require ('./lib/triangle');
 
 const Square = require ('./lib/square');
 
-
-// const Shape = require ('./lib/shape');
-
-
 // create terminal questions to generate logo 
 
 const questions = [
@@ -57,11 +53,10 @@ if (response.length > 3) {
 return true;
 }
 
-
 // current CSS3 colours 
 var colorList = ['aliceblue', 'antiquewhite', 'aqua', 'aquamarine','azure','beige','bisque','black','blanchedalmond','blue','blueviolet','brown','burlywood','cadetblue','chartreuse','chocolate','coral','cornflowerblue','cornsilk','crimson','cyan','darkblue','darkcyan','darkgoldenrod','darkgray','darkgreen','darkgray', 'darkkhaki','darkmagenta','darkolivegreen','darkorange','darkorchid','darkred','darksalmon','darkseagreen','darkslateblue','darkslategray', 'darkslategrey', 'darkturquoise','darkviolet','deeppink','deepskyblue','dimgray','dodgerblue','firebrick','floralwhite','forestgreen','fuchsia','gainsboro','ghostwhite','gold','goldenrod','gray','green','greenyellow','honeydew','hotpink','indianred','indigo','ivory','khaki','lavender','lavenderblush','lawngreen','lemonchiffon','lightblue','lightcoral','lightcyan','lightgoldenrodyellow','lightgrey','lightgray', 'lightgreen','lightpink','lightsalmon','lightseagreen','lightskyblue','lightslategray','lightsteelblue','lightyellow','lime','limegreen','linen','magenta','maroon','mediumaquamarine','mediumblue','mediumorchid','mediumpurple','mediumseagreen','mediumslateblue','mediumspringgreen','mediumturquoise','mediumvioletred','midnightblue','mintcream','mistyrose','moccasin','navajowhite','navy','oldlace','olive','olivedrab','orange','orangered','orchid','palegoldenrod','palegreen','paleturquoise','palevioletred','papayawhip','peachpuff','peru','pink','plum','powderblue','purple','red','rosybrown','royalblue','saddlebrown','salmon','sandybrown','seagreen','seashell','sienna','silver','skyblue','slateblue','slategray','snow','springgreen','steelblue','tan','teal','thistle', 'tomato','turquoise','violet','wheat','white','whitesmoke','yellow','yellowgreen'];  
 
-//testing for colours for textcolor & shapecolor 
+// testing for colours for textcolor & shapecolor 
 function validHexaCode(response) {
     // checking for valid hexadecimal colour codes 
     let regex = new RegExp(/^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/);
@@ -73,11 +68,12 @@ function validHexaCode(response) {
     if (colorList.includes(response) || regex.test(response) ) {
         return true;
     }
+    
     // prompts the user to enter a valid colour
     else {
         return "Please enter a valid colour value ";
     }
-}
+} 
 
     // used to write given data to a file with logo.svg name
     // fileName is name of file i want to write to 
