@@ -70,6 +70,8 @@ The terminal will look like this if ran successfully:
 
 Thank you to my tutor Jehyun Jung and my study partner [Rebecca Lawrence!](https://github.com/rkml14)
 
+[GeeksforGeeks!](https://www.geeksforgeeks.org/)
+
 ## Questions 
 
 [GitHub Link](https://github.com/cassiewatsonn)
