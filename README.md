@@ -21,6 +21,8 @@ To install this package, you will gather the files from the LogoMaker GitHub Res
 
 ## Usage 
 
+Here is a video displaying how to application works: [LogoMaker Video](https://drive.google.com/file/d/1xTjGwhot4iHYPFp2ERaNm5t8GoMX2PFQ/view)
+
 After you have successfully installed the package (if you have not yet installed, please refer to [Installation](#installation)), use 'node index.js' to run the application in the terminal. When you are prompted for text then, you can enter up to three characters for your logo. When you are prompted for the text color then, you can enter a color keyword (OR a hexadecimal number). When you are prompted for a shape then, you are presented with a list of shapes to choose from: circle, triangle, and square. When you are prompted for the shape's color then, you can enter a color keyword (OR a hexadecimal number). When you have entered input for all the prompts then, an SVG file is created named `logo.svg` and the output text "Generated logo.svg" is printed in the command line. Select the 'logoSAMPLE' folder  to find  your 'logo.svg' file. When you open the `logo.svg` file in a browser then, you are shown a 300x200 pixel image that matches the criteria you entered. 
 
 ## ![LogoMaker](./examples/usage.png)
