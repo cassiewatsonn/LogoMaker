@@ -54,7 +54,7 @@ SOFTWARE.
 
 ## Contributions
 
-Please contact me if you would like to contribute. You can find my information under the Questions section. 
+Please contact me if you would like to contribute. You can find my information under the [Questions](#questions) section. 
 
 ## Tests 
 
