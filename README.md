@@ -4,7 +4,7 @@
 
 ## Description
 
-This Logo Maker is a command-line application built with Node.js that takes user input to generate a logo and save it on an SVG file. The user can select colour , shape and provide text for the logo. Once saved, a logo will be generated into an .svg file. As an aspiring web developer, I want to generate a simple logo for my projects so, I do not have to pay a graphic designer. 
+This Logo Maker is a command-line application built with Node.js that takes user input to generate a logo and save it on an SVG file. The user can select colours, shape and provide text for the logo. Once saved, a logo will be generated into an .svg file. As an aspiring web developer, I want to generate a simple logo for my projects so, I do not have to pay a graphic designer. 
 
 ## Table of Contents 
 
@@ -12,15 +12,18 @@ This Logo Maker is a command-line application built with Node.js that takes user
 - [Usage](#usage)
 - [How to Contribute](#contributions)
 - [Tests](#tests)
+- [Credits](#credits)
 - [Questions](#questions)
 
 ## Installation 
 
-To install this package, you will gather the files from the LogoMaker GitHub Respoitory by Cassandra Watson (https://github.com/cassiewatsonn/LogoMaker). Once you have all of the files, navigate to your terminal and input 'npm install'. This will install the inquirer and the jest package from the package.json file.
+To install this package, you will gather the files from the LogoMaker GitHub Respoitory by Cassandra Watson (https://github.com/cassiewatsonn/LogoMaker). Once you have all of the files, navigate to your terminal and input 'npm install'. This will install the inquirer and the jest package from the package.json file. 
 
 ## Usage 
 
-GIVEN a command-line application that accepts user input WHEN I am prompted for text THEN I can enter up to three characters WHEN I am prompted for the text color THEN I can enter a color keyword (OR a hexadecimal number) WHEN I am prompted for a shape THEN I am presented with a list of shapes to choose from: circle, triangle, and square WHEN I am prompted for the shape's color THEN I can enter a color keyword (OR a hexadecimal number) WHEN I have entered input for all the prompts THEN an SVG file is created named `logo.svg` AND the output text "Generated logo.svg" is printed in the command line WHEN I open the `logo.svg` file in a browser THEN I am shown a 300x200 pixel image that matches the criteria I entered
+After you have successfully installed the package (if you have not yet installed, please refer to [Installation](#installation)), use 'node index.js' to run the application in the terminal. When you are prompted for text then, you can enter up to three characters for your logo. When you are prompted for the text color then, you can enter a color keyword (OR a hexadecimal number). When you are prompted for a shape then, you are presented with a list of shapes to choose from: circle, triangle, and square. When you are prompted for the shape's color then, you can enter a color keyword (OR a hexadecimal number). When you have entered input for all the prompts then, an SVG file is created named `logo.svg` and the output text "Generated logo.svg" is printed in the command line. Select the 'logoSAMPLE' folder  to find  your 'logo.svg' file. When you open the `logo.svg` file in a browser then, you are shown a 300x200 pixel image that matches the criteria you entered. 
+
+(./examples/usage.png)
 
 ## License Description
 
@@ -50,11 +53,19 @@ SOFTWARE.
 
 ## Contributions
 
-N/A
+Please contact me if you would like to contribute. You can find my information under the Questions section. 
 
 ## Tests 
 
-Coming soon...
+To test that the program is running successfully, input 'npm run test' in the terminal. This  will test the Shape, Triangle, Square and Circle classes. 
+
+The terminal will look like this if ran successfully: 
+
+(./examples/tests.png)
+
+## Credits 
+
+Thank you to my tutor Jehyun Jung and my study partner Rebecca Lawrence [Rebecca's GitHub](https://github.com/rkml14)
 
 ## Questions 
 
