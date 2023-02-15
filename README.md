@@ -68,7 +68,7 @@ The terminal will look like this if ran successfully:
 
 ## Credits 
 
-Thank you to my tutor Jehyun Jung and my study partner Rebecca Lawrence [Rebecca's GitHub](https://github.com/rkml14)
+Thank you to my tutor Jehyun Jung and my study partner [Rebecca Lawrence](https://github.com/rkml14)
 
 ## Questions 
 
